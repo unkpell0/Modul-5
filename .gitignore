@@ -1,0 +1,20 @@
+public class segitiga {
+    public static void main(String[] args){
+        int baris = 4;
+        int spasi = baris - 1;
+
+        for (int turun = 0; turun < baris; turun++){
+            for (int a = 0; a < spasi; a++){
+                System.out.print(" ");
+            }
+            for (int b = 0; b < baris; b++){
+                System.out.print("*");
+                if (b == turun){
+                    break;
+                }
+            }
+            spasi = spasi - 1;
+            System.out.println();
+        }
+    }
+}
